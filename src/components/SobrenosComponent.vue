@@ -14,7 +14,7 @@
                 </p>
             </div>
             <div class="sobrenos-imagem">
-                <img src="../assets/sobre.png"
+                <img src="../assets/sobre.jpg"
                     alt="" />
             </div>
         </div>
