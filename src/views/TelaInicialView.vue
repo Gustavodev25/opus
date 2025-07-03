@@ -1,5 +1,4 @@
 <template>
-    <!-- Topbar fixa com a logo centralizada horizontalmente e largura igual ao hero-container -->
     <div class="topbar">
         <div class="topbar-inner">
             <div class="logo">
@@ -8,28 +7,23 @@
         </div>
     </div>
     <div class="hero-container">
-        <!-- Texto à esquerda -->
         <div class="text-content">
-            <!-- Título -->
             <h1 class="main-title">
                 Transforme seu negócio<br>
                 com tráfego pago<br>
                 e tecnologia
             </h1>
 
-            <!-- Descrição -->
             <p class="description">
                 Somos especialistas em gerar resultados através de campanhas de tráfego pago otimizadas e soluções
                 tecnológicas personalizadas para o seu negócio.
             </p>
 
-            <!-- Botão -->
             <button class="cta-button" @click="scrollToCases">
                 Mais sobre
             </button>
         </div>
 
-        <!-- Imagem à direita -->
         <div class="image-section">
             <div class="woman-cards-wrapper">
                 <!-- Card 1 -->
@@ -82,6 +76,7 @@
     <div style="margin-top: -2px;"><TesteAnimacao /></div>
     <div id="cases"></div>
     <CasesComponent />
+    <div id="sobrenos"></div>
     <SobrenosComponent />
     <FormularioComponent />
     <RodapeComponent />
@@ -110,7 +105,7 @@ export default {
     },
     methods: {
         scrollToCases() {
-            const el = document.getElementById('cases');
+            const el = document.getElementById('sobrenos');
             if (el) {
                 el.scrollIntoView({ behavior: 'smooth' });
             }
@@ -290,7 +285,7 @@ export default {
 
 /* Botão */
 .cta-button {
-    background: linear-gradient(135deg, #2a4a6b 0%, #1e3a5f 100%);
+    background: #4378ad;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     padding: 15px 30px;
