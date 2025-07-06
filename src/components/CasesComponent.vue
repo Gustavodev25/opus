@@ -1,520 +1,323 @@
 <template>
-    <section class="cases-section">
+  <div ref="mainContainerRef" class="jornada-container">
+    <div ref="stickyContentRef" class="jornada-sticky-content">
+      
+      <div ref="filmstripRef" class="jornada-filmstrip">
 
-        <div class="top-text">
-            <h1>Cases de Sucesso</h1>
-            <p>Conheça alguns dos resultados que alcançamos para nossos clientes. Cada projeto é único e desenvolvido
-                com estratégias personalizadas.</p>
-        </div>
-
-        <div class="cases-container">
-            <div class="line-case">
-
-                <div class="left-case">
-                    <img src="../assets/moda.jpg" alt="Clínica Médica" class="imagem" />
-                </div>
-
-                <div class="right-case">
-
-                    <div class="content-case">
-
-                        <div class="top-case">
-                            <div class="tag">
-                                <span>Tráfego Pago + CRO</span>
-                            </div>
-                            <h1>E-commerce de Moda</h1>
-
-                            <p>Aumentamos as vendas online em 340% através de campanhas otimizadas e melhorias na
-                                experiência do usuário.</p>
-                        </div>
-
-                        <div class="body-case">
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-ease-in-out">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M3 20c8 0 10 -16 18 -16" />
-                                    </svg>
-                                </div>
-                                <h1>+340%</h1>
-                                <p>ROI</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                        <path d="M17 17h-11v-14h-2" />
-                                        <path d="M6 5l14 1l-1 7h-13" />
-                                    </svg>
-                                </div>
-                                <h1>+250%</h1>
-                                <p>Conversões</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-users">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                                    </svg>
-                                </div>
-                                <h1>+180%</h1>
-                                <p>Tráfego</p>
-                            </div>
-
-                        </div>
-                        <div class="tags-case">
-                            <span class="case-tag">Google Ads</span>
-                            <span class="case-tag">Meta Ads</span>
-                            <span class="case-tag">CRO</span>
-                            <span class="case-tag">E-commerce</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
+        <section class="jornada-scene scene-intro">
+          <div class="intro-content">
+            <h1 class="scene-title">A Anatomia do Crescimento</h1>
+            <p class="scene-subtitle">Resultados não acontecem por acaso. Eles são construídos através de uma estratégia que acompanha o seu cliente em cada etapa da jornada.</p>
+            <div class="scroll-indicator">
+              <span>Role para descobrir nossa estratégia</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L7 14M12 19L17 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-            <div class="line-case">
+          </div>
+        </section>
 
-                <div class="right-case">
-
-                    <div class="content-case">
-
-                        <div class="top-case">
-                            <div class="tag">
-                                <span>Marketing Digital + Dev</span>
-                            </div>
-                            <h1>SaaS B2B</h1>
-
-                            <p>Transformamos um produto B2B em uma máquina de geração de leads qualificados.</p>
-                        </div>
-
-                        <div class="body-case">
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-users">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                                    </svg>
-                                </div>
-                                <h1>+420%</h1>
-                                <p>Leads</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-ease-in-out">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M3 20c8 0 10 -16 18 -16" />
-                                    </svg>
-                                </div>
-                                <h1>-65%</h1>
-                                <p>CAC</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                        <path d="M17 17h-11v-14h-2" />
-                                        <path d="M6 5l14 1l-1 7h-13" />
-                                    </svg>
-                                </div>
-                                <h1>+280%</h1>
-                                <p>MRR</p>
-                            </div>
-
-                        </div>
-                        <div class="tags-case">
-                            <span class="case-tag">LinkedIn Ads</span>
-                            <span class="case-tag">Content Marketing</span>
-                            <span class="case-tag">Landing Pages</span>
-                            <span class="case-tag">Automation</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="left-case">
-                    <img src="../assets/saas.jpg" alt="Clínica Médica" class="imagem" />
-                </div>
-
+        <section class="jornada-scene scene-funil">
+          <div class="funil-content">
+            <div class="funil-header">
+              <span class="etapa-numero">ETAPA 01</span>
+              <h2 class="etapa-titulo">Atração (Topo)</h2>
+              <p class="etapa-descricao">O primeiro passo é ser encontrado. Criamos conteúdo e campanhas que atraem um grande volume de visitantes qualificados, que talvez ainda não conheçam sua marca, mas buscam soluções que você oferece.</p>
             </div>
-            <div class="line-case">
-
-                <div class="left-case">
-                    <img src="../assets/medico.jpg" alt="Clínica Médica" class="imagem" />
-                </div>
-
-                <div class="right-case">
-
-                    <div class="content-case">
-
-                        <div class="top-case">
-                            <div class="tag">
-                                <span>Marketing Local + SEO</span>
-                            </div>
-                            <h1>Clínica Médica</h1>
-
-                            <p>Posicionamos a clínica como referência local através de estratégias integradas.</p>
-                        </div>
-
-                        <div class="body-case">
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-users">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                                    </svg>
-                                </div>
-                                <h1>+190%</h1>
-                                <p>Agendamentos</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-ease-in-out">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M3 20c8 0 10 -16 18 -16" />
-                                    </svg>
-                                </div>
-                                <h1>Top 3</h1>
-                                <p>Posição SEO</p>
-                            </div>
-
-                            <div class="card">
-                                <div class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                        <path d="M17 17h-11v-14h-2" />
-                                        <path d="M6 5l14 1l-1 7h-13" />
-                                    </svg>
-                                </div>
-                                <h1>+300%</h1>
-                                <p>Presença Online</p>
-                            </div>
-
-                        </div>
-                        <div class="tags-case">
-                            <span class="case-tag">Google Ads</span>
-                            <span class="case-tag">Meta Ads</span>
-                            <span class="case-tag">Google My Business</span>
-                            <span class="case-tag">Website</span>
-                        </div>
-                    </div>
-
-
-                </div>
-
+            <div class="etapa-taticas">
+              <div class="taticas-card">Marketing de Conteúdo</div>
+              <div class="taticas-card">SEO e Busca Orgânica</div>
+              <div class="taticas-card">Anúncios em Redes Sociais</div>
+              <div class="taticas-card">Google Ads (Pesquisa)</div>
             </div>
-        </div>
+          </div>
+        </section>
 
-    </section>
+        <section class="jornada-scene scene-funil">
+           <div class="funil-content">
+            <div class="funil-header">
+              <span class="etapa-numero">ETAPA 02</span>
+              <h2 class="etapa-titulo">Engajamento (Meio)</h2>
+              <p class="etapa-descricao">Aqui, transformamos visitantes em leads. Nutrimos o interesse com materiais ricos, construindo um relacionamento de confiança e posicionando sua marca como a melhor solução para o problema deles.</p>
+            </div>
+            <div class="etapa-taticas">
+              <div class="taticas-card">Landing Pages de Alta Conversão</div>
+              <div class="taticas-card">E-mail Marketing e Automação</div>
+              <div class="taticas-card">Remarketing Estratégico</div>
+              <div class="taticas-card">Webinars e E-books</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="jornada-scene scene-funil">
+           <div class="funil-content">
+            <div class="funil-header">
+              <span class="etapa-numero">ETAPA 03</span>
+              <h2 class="etapa-titulo">Conversão (Fundo)</h2>
+              <p class="etapa-descricao">É o momento da decisão. Focamos em levar os leads mais qualificados à ação, seja uma compra, um pedido de orçamento ou uma demonstração, através de ofertas diretas e otimização da experiência do usuário (CRO).</p>
+            </div>
+            <div class="etapa-taticas">
+              <div class="taticas-card">Campanhas de Vendas</div>
+              <div class="taticas-card">Otimização de Conversão (CRO)</div>
+              <div class="taticas-card">Google Shopping</div>
+              <div class="taticas-card">Páginas de Produto Otimizadas</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="jornada-scene scene-final">
+           <div class="final-content">
+            <h1 class="scene-title">O Ciclo se Reinicia: Fidelização</h1>
+            <p class="scene-subtitle">Um cliente conquistado é o começo de um novo ciclo. Estratégias de pós-venda garantem a satisfação, aumentam o LTV e transformam clientes em defensores da sua marca. Pronto para aplicar esta jornada no seu negócio?</p>
+            <button class="cta-button">Planejar Minha Estratégia</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
-export default {
-    name: 'CasesComponent',
-    data() {
-        return {
-        }
-    }
-}
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const mainContainerRef = ref(null);
+const stickyContentRef = ref(null);
+const filmstripRef = ref(null);
+let gsapContext = null;
+
+onMounted(() => {
+  gsapContext = gsap.context(() => {
+    
+    ScrollTrigger.matchMedia({
+      "(min-width: 769px)": function() {
+        const filmstrip = filmstripRef.value;
+        // O valor 400vw representa a distância de scroll das 4 cenas após a primeira
+        const amountToScroll = filmstrip.offsetWidth - window.innerWidth;
+
+        gsap.to(filmstrip, {
+          x: -amountToScroll,
+          ease: "none",
+          scrollTrigger: {
+            trigger: mainContainerRef.value,
+            start: "top top",
+            end: () => `+=${amountToScroll}`,
+            scrub: 1,
+            pin: true,
+            anticipatePin: 1,
+            invalidateOnRefresh: true
+          }
+        });
+
+        const scenes = gsap.utils.toArray('.jornada-scene');
+        scenes.forEach(scene => {
+          const contentToAnimate = scene.querySelectorAll('.etapa-titulo, .etapa-descricao, .etapa-numero, .taticas-card, .scene-title, .scene-subtitle, .cta-button');
+          gsap.from(contentToAnimate, {
+            y: 50,
+            opacity: 0,
+            stagger: 0.1,
+            scrollTrigger: {
+              trigger: scene,
+              containerAnimation: gsap.getTweensOf(filmstrip)[0],
+              start: "left 70%",
+              toggleActions: "play resume resume reverse",
+            }
+          });
+        });
+      },
+
+      "(max-width: 768px)": function() {
+        const scenes = gsap.utils.toArray('.jornada-scene');
+        scenes.forEach(scene => {
+          const contentToAnimate = scene.querySelectorAll('.etapa-titulo, .etapa-descricao, .etapa-numero, .taticas-card, .scene-title, .scene-subtitle, .cta-button');
+           gsap.from(contentToAnimate, {
+            y: 50,
+            opacity: 0,
+            stagger: 0.05,
+            duration: 0.5,
+            scrollTrigger: {
+              trigger: scene,
+              start: "top 80%",
+              toggleActions: "play none none reverse",
+            }
+          });
+        });
+      }
+    });
+
+  }, mainContainerRef.value);
+});
+
+onUnmounted(() => {
+  if (gsapContext) {
+    gsapContext.revert();
+  }
+});
 </script>
 
 <style scoped>
-.cases-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
-    text-align: center;
+/* ESTRUTURA PRINCIPAL (igual ao anterior) */
+.jornada-container {
+  position: relative;
+  background-color: #090a0f;
+  color: white;
+}
+.jornada-sticky-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.jornada-filmstrip {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 500%; /* 5 cenas */
+}
+.jornada-scene {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.top-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: white;
+/* CENA INTRO E FINAL (reaproveitado) */
+.scene-intro, .scene-final {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  text-align: center;
+}
+.intro-content, .final-content {
+  max-width: 800px;
+}
+.scene-title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: white;
+}
+.scene-subtitle {
+  font-size: 1.2rem;
+  color: #969696;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scroll-indicator {
+  margin-top: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #969696;
 }
 
-.top-text {
-    max-width: 800px;
-    margin: 0 auto;
-    color: white;
+/* NOVO ESTILO: CENAS DO FUNIL */
+.scene-funil {
+  background-color: #090a0f;
+}
+.funil-content {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+.funil-header {
+  margin-bottom: 60px;
+}
+.etapa-numero {
+  color: #56ACD2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+.etapa-titulo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+.etapa-descricao {
+  font-size: 1.1rem;
+  color: #969696;
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+  line-height: 1.6;
+}
+.etapa-taticas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.taticas-card {
+  background-color: #1A1A1A;
+  border: 1px solid #2d323c;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.taticas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.cases-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
+
+/* CTA BUTTON (reaproveitado) */
+.cta-button {
+  margin-top: 40px;
+  padding: 15px 30px;
+  background-color: #56ACD2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #6ac1e6;
 }
 
-.line-case {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 60px;
-}
-
-.line-case>.right-case:first-child {
-    margin-right: 50px;
-}
-
-.left-case {
-    width: 50%;
-}
-
-.right-case {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-}
-
-.imagem {
-    width: 100%;
-    height: 360px;
-    background-color: #1A1A1A;
-    border: 1px solid #333333;
-    border-radius: 10px;
-}
-
-.content-case {
-    margin-left: 50px;
-    width: calc(100% - 50px);
-}
-
-.top-case h1 {
-    align-self: flex-start;
-    text-align: start;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-}
-
-.top-case p {
-    align-self: flex-start;
-    text-align: start;
-    color: #969696;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0;
-}
-
-.tag {
-    display: flex;
-    align-items: flex-start;
-}
-
-span {
-    background-color: #56add24b;
-    color: #56ACD2;
-    padding: 5px 10px;
-    border-radius: 100px;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
-
-.body-case {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    width: 100%;
-}
-
-.tags-case {
-    margin-top: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1A1A1A;
-    border: 1px solid #333333;
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-    min-width: 0;
-}
-
-.card .icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-    color: #FFFFFF;
-}
-
-.card h1 {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-.card p {
-    color: #969696;
-    font-size: 13px;
-}
-
-.case-tag {
-    background: #23272f;
-    color: #56ACD2;
-    padding: 6px 18px;
-    border-radius: 100px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    border: 1px solid #2d323c;
-}
-
-/* Responsividade */
-@media (max-width: 1024px) {
-    .cases-container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .content-case {
-        margin-left: 20px;
-        width: calc(100% - 20px);
-    }
-
-    .imagem {
-        height: 240px;
-    }
-
-    .top-text h1 {
-        font-size: 2rem;
-    }
-
-    .top-case h1 {
-        font-size: 1.5rem;
-    }
-}
-
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .cases-section {
-        padding: 40px 5px;
-    }
-
-    .line-case {
-        flex-direction: column;
-        align-items: stretch;
-        margin-top: 40px;
-    }
-
-    .left-case,
-    .right-case {
-        width: 100%;
-    }
-
-    .content-case {
-        margin-left: 0;
-        margin-top: 24px;
-        width: 100%;
-    }
-
-    .imagem {
-        height: 180px;
-    }
-
-    .body-case {
-        flex-direction: column;
-        gap: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cases-section {
-        padding: 24px 2px;
-    }
-
-    .top-text h1 {
-        font-size: 1.3rem;
-    }
-
-    .top-text p {
-        font-size: 0.95rem;
-    }
-
-    .top-case h1 {
-        font-size: 1.1rem;
-    }
-
-    .top-case p {
-        font-size: 0.95rem;
-    }
-
-    .imagem {
-        height: 120px;
-    }
-
-    .card {
-        padding: 12px;
-    }
-
-    .card h1 {
-        font-size: 1rem;
-    }
-
-    .case-tag {
-        font-size: 0.8rem;
-        padding: 4px 10px;
-    }
+  .jornada-sticky-content {
+    position: static;
+    height: auto;
+  }
+  .jornada-filmstrip {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .jornada-scene {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 20px;
+  }
+  .scene-title {
+    font-size: 2.5rem;
+  }
+  .etapa-titulo {
+    font-size: 2rem;
+  }
+  .etapa-taticas {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 </style>

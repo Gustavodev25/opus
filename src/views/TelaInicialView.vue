@@ -26,36 +26,29 @@
 
         <div class="image-section">
             <div class="woman-cards-wrapper">
-                <!-- Card 1 -->
                 <div class="woman-card woman-card-1">
                     <span class="woman-card-icon">📈</span>
                     <div class="woman-card-value">+87%</div>
                     <div class="woman-card-label">Crescimento</div>
                 </div>
-                <!-- Card 2 -->
                 <div class="woman-card woman-card-2">
                     <span class="woman-card-icon">💡</span>
                     <div class="woman-card-value">+62%</div>
                     <div class="woman-card-label">Engajamento</div>
                 </div>
-                <!-- Card 3 -->
                 <div class="woman-card woman-card-3">
                     <span class="woman-card-icon">🚀</span>
                     <div class="woman-card-value">+95%</div>
                     <div class="woman-card-label">Conversão</div>
                 </div>
                 <div class="woman-container">
-                    <!-- Blur animado atrás da mulher -->
                     <div class="woman-blur-glow"></div>
                     <img src="../assets/mulher.png" alt="Mulher com celular" class="woman-image">
-                    <!-- Feixe de luz removido -->
-                </div>
+                    </div>
             </div>
         </div>
 
-        <!-- Efeitos de Fundo -->
         <div class="bg-effects">
-            <!-- Feixes e orbs bem desfocados e no fundo -->
             <div class="light-beam beam-blur"></div>
             <div class="light-beam beam-blue beam-blur"></div>
             <div class="light-beam beam-white beam-blur"></div>
@@ -65,7 +58,6 @@
             <div class="light-orb orb-2 beam-blur"></div>
         </div>
     </div>
-    <!-- Feixes de luz globais para toda a página -->
     <div class="global-bg-effects">
         <div class="global-light-beam global-beam-1 beam-blur"></div>
         <div class="global-light-beam global-beam-2 beam-blur"></div>
@@ -80,6 +72,16 @@
     <SobrenosComponent />
     <FormularioComponent />
     <RodapeComponent />
+
+    <a href="https://wa.me/553784032642" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+    </a>
 </template>
 
 <script>
@@ -115,6 +117,8 @@ export default {
 </script>
 
 <style scoped>
+/* Estilos existentes... */
+
 /* Topbar fixa com logo à esquerda */
 .topbar {
     width: 100%;
@@ -715,4 +719,33 @@ html, body {
     width: 100vw;
     overflow-x: hidden;
 }
+
+/* Estilo para o botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button svg {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
 </style>
