@@ -46,8 +46,8 @@
             >
               <option value="">Selecione um serviço</option>
               <option value="desenvolvimento">Desenvolvimento Web</option>
+              <option value="trafegopago">Tráfego pago</option>
               <option value="marketing">Marketing Digital</option>
-              <option value="consultoria">Consultoria</option>
             </select>
           </div>
         </div>
@@ -95,7 +95,6 @@ export default {
   },
   methods: {
     submitForm() {
-      // Substitua pelo número desejado (apenas números, com DDD e país, ex: 5511999999999)
       const numeroWhatsapp = '553784032642'
       const texto = 
         `*Novo contato pelo site!*\n\n` +
