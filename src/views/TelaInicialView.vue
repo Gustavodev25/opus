@@ -67,7 +67,9 @@
     <div style="margin-top: 80px;"><SolucoesDigitais /></div>
     <div style="margin-top: -2px;"><TesteAnimacao /></div>
     <div id="cases"></div>
-    <CasesComponent />
+    
+    <CasesComponent @irParaSobreNos="scrollToSobreNos" />
+
     <div id="sobrenos"></div>
     <SobrenosComponent />
     <FormularioComponent />
@@ -107,6 +109,14 @@ export default {
     },
     methods: {
         scrollToCases() {
+            // Este método continua funcionando para o outro botão
+            const el = document.getElementById('sobrenos');
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        },
+        // ALTERAÇÃO AQUI: Adicionado novo método
+        scrollToSobreNos() {
             const el = document.getElementById('sobrenos');
             if (el) {
                 el.scrollIntoView({ behavior: 'smooth' });

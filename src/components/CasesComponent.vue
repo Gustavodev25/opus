@@ -69,7 +69,7 @@
            <div class="final-content">
             <h1 class="scene-title">O Ciclo se Reinicia: Fidelização</h1>
             <p class="scene-subtitle">Um cliente conquistado é o começo de um novo ciclo. Estratégias de pós-venda garantem a satisfação, aumentam o LTV e transformam clientes em defensores da sua marca. Pronto para aplicar esta jornada no seu negócio?</p>
-            <button class="cta-button">Planejar Minha Estratégia</button>
+            <button class="cta-button" @click="$emit('irParaSobreNos')">Planejar Minha Estratégia</button>
           </div>
         </section>
 
