@@ -79,11 +79,12 @@ onUnmounted(() => {
 .sobrenos-container {
   display: flex;
   align-items: center;
-  gap: 50px; /* Reduzido de 60px */
-  padding: 70px 40px; /* Reduzido de 80px */
+  gap: 50px;
+  padding: 70px 40px;
   max-width: 1200px;
   margin: 0 auto;
-  color: white; 
+  color: white;
+  -webkit-text-size-adjust: 100%;
 }
 
 .sobrenos-conteudo {
@@ -96,26 +97,26 @@ onUnmounted(() => {
   letter-spacing: 1px;
   margin-bottom: 10px;
   display: block;
-  font-size: 0.9rem; /* Adicionado para consistência */
+  font-size: 0.9rem;
 }
 
 .sobrenos-titulo {
-  font-size: 2.2rem; /* Reduzido de 2.5rem */
+  font-size: 2.2rem;
   font-weight: bold;
-  margin-bottom: 15px; /* Reduzido de 20px */
+  margin-bottom: 15px;
   color: white;
 }
 
 .sobrenos-texto {
   color: #b5b5b5;
-  line-height: 1.6; /* Levemente reduzido de 1.7 */
-  margin-bottom: 25px; /* Reduzido de 30px */
-  font-size: 0.95rem; /* Definido um tamanho menor */
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
 }
 
 .sobrenos-metricas {
   display: flex;
-  gap: 25px; /* Reduzido de 30px */
+  gap: 25px;
 }
 
 .metrica {
@@ -124,42 +125,54 @@ onUnmounted(() => {
 }
 
 .metrica-valor {
-  font-size: 22px; /* Reduzido de 2rem */
+  font-size: 22px;
   font-weight: bold;
   color: #56ACD2;
 }
 
 .metrica-label {
   color: #b5b5b5;
-  font-size: 0.8rem; /* Reduzido de 0.9rem */
+  font-size: 0.8rem;
 }
 
 .sobrenos-imagem {
   flex: 1;
-  height: 550px; /* Altura levemente reduzida */
-  border-radius: 12px; 
-  overflow: hidden; 
-  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);  */
+  aspect-ratio: 4 / 5;
+  max-height: 550px;
+  border-radius: 12px;
+  overflow: hidden;
+
 }
 
 .sobrenos-imagem img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-  display: block; 
+  width: 100%;
+  height: 100%;
+  /* No desktop, mantemos 'cover' que geralmente fica melhor em telas grandes */
+  object-fit: cover;
+  display: block;
 }
 
 
+/* --- Media Query para Celulares --- */
 @media (max-width: 768px) {
   .sobrenos-container {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     padding: 40px 20px;
     gap: 40px;
   }
+
   .sobrenos-imagem {
-    width: 100%; 
-    height: 300px; 
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    max-height: none;
     margin-bottom: 0;
+  }
+
+  /* --- NOVA REGRA ADICIONADA --- */
+  /* Esta é a mudança que faz a imagem aparecer inteira no celular */
+  .sobrenos-imagem img {
+    object-fit: contain; /* Garante que a imagem inteira seja visível, sem cortes */
   }
 }
 </style>
