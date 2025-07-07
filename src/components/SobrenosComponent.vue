@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="sobrenos-imagem">
-      <img src="../assets/sobre.jpeg" alt="Equipe da Opus">
+      <img src="../assets/sobre2.png" alt="Equipe da Opus">
     </div>
   </div>
 </template>
@@ -79,8 +79,8 @@ onUnmounted(() => {
 .sobrenos-container {
   display: flex;
   align-items: center;
-  gap: 60px;
-  padding: 80px 40px;
+  gap: 50px; /* Reduzido de 60px */
+  padding: 70px 40px; /* Reduzido de 80px */
   max-width: 1200px;
   margin: 0 auto;
   color: white; 
@@ -96,24 +96,26 @@ onUnmounted(() => {
   letter-spacing: 1px;
   margin-bottom: 10px;
   display: block;
+  font-size: 0.9rem; /* Adicionado para consistência */
 }
 
 .sobrenos-titulo {
-  font-size: 2.5rem;
+  font-size: 2.2rem; /* Reduzido de 2.5rem */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduzido de 20px */
   color: white;
 }
 
 .sobrenos-texto {
   color: #b5b5b5;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  line-height: 1.6; /* Levemente reduzido de 1.7 */
+  margin-bottom: 25px; /* Reduzido de 30px */
+  font-size: 0.95rem; /* Definido um tamanho menor */
 }
 
 .sobrenos-metricas {
   display: flex;
-  gap: 30px;
+  gap: 25px; /* Reduzido de 30px */
 }
 
 .metrica {
@@ -122,22 +124,22 @@ onUnmounted(() => {
 }
 
 .metrica-valor {
-  font-size: 2rem;
+  font-size: 22px; /* Reduzido de 2rem */
   font-weight: bold;
   color: #56ACD2;
 }
 
 .metrica-label {
   color: #b5b5b5;
-  font-size: 0.9rem;
+  font-size: 0.8rem; /* Reduzido de 0.9rem */
 }
 
 .sobrenos-imagem {
   flex: 1;
-  height: 590px; 
+  height: 550px; /* Altura levemente reduzida */
   border-radius: 12px; 
   overflow: hidden; 
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); 
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);  */
 }
 
 .sobrenos-imagem img {
