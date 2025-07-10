@@ -48,6 +48,7 @@
               <option value="desenvolvimento">Desenvolvimento Web</option>
               <option value="trafegopago">Tráfego pago</option>
               <option value="marketing">Marketing Digital</option>
+              <option value="googleanalytics">Google Analytics</option>
             </select>
           </div>
         </div>
